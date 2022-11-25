@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Unit : MonoBehaviour
 {
-    private Rigidbody unitRb;
+    protected Rigidbody unitRb;
     public float jumpForce;
     public float timer = 0.0f;
     public int timerLimit { get; set; } //ENCAPSULATION
@@ -21,4 +21,5 @@ public class Unit : MonoBehaviour
             timer = 0.0f;
         }
     }
+
 }
